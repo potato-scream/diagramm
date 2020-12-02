@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>test task</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+
+<body class="body">
+  <main class="main">
+    <section class="loyalty">
+      <div class="loyalty__diagram-wrapper">
+        <svg class="circle-chart" viewbox="0 0 180 180" width="228" height="228" xmlns="http://www.w3.org/2000/svg">
+          <circle class="circle-chart__figure" stroke-width="8" stroke="#ececec" stroke-dasharray="470,534"
+            stroke-linecap="round" fill="none" cx="90" cy="90" r="85" />
+          <circle class="circle-chart__figure circle-chart__figure--animated" stroke="#70a94b" stroke-width="8"
+            stroke-dasharray="334,534" stroke-linecap="round" fill="none" cx="90" cy="90" r="85" />
+          <circle class="circle-chart__figure circle-chart__figure--animated"
+            stroke="#fcd329" stroke-width="8" fill="none" cx="90" cy="90" r="85" stroke-dasharray="170,534"
+            stroke-linecap="round" />
+        </svg>
+        <div class="loyalty__stats">
+          <dl class="loyalty__percent">
+            <dt class="loyalty__percent-number">72<span class="loyalty__percent-subnumber">.7</span><span
+                class="loyalty__percent-sign">%</span>
+            </dt>
+            <dd class="loyalty__description">Лояльность</dd>
+          </dl>
+          <p class="loyalty__summury">ниже среднего</p>
+          <p class="loyalty__average">по отрасли: FMCG значений слева от медианы 52.0% - 83.1%</p>
+          <p class="loyalty__average-box">
+            <span class="loyalty__triangle"></span>
+            <span class="loyalty__average-number">3.1</span>
+          </p>
+        </div>
+      </div>
+      <table class="loyalty__table table">
+        <tbody>
+          <tr class="table__row">
+            <td class="table__column table__column--title">Промоутеры</td>
+            <td class="table__column">
+              <div class="table__column-top">
+                <p class="table__percent">32.0%</p>
+              </div>
+              <div class="table__column-bottom">
+                <p class="table__ppl-number">81</p>
+                <svg class="table__icon" viewBox="0 0 15.59 16.31" width="15px" height="15px">
+                  <path class="cls-1"
+                    d="M15.11,12.71a1.82,1.82,0,0,0-1-1.29l-2.81-1.29h0l-1.16-.88h0a.8.8,0,0,0-.19-.38l0,0V7.44a7.55,7.55,0,0,0,.72-1.32,1.7,1.7,0,0,0,.77-1.32c0-.69-.21-.85-.42-.86C11,3.47,11.24,0,7.71,0,3.92,0,4.46,4,4.46,4h0c-.2,0-.42.17-.38.8a1.76,1.76,0,0,0,.76,1.32,9.32,9.32,0,0,0,.72,1.32V8.89a.78.78,0,0,0-.19.36l-1.16.87v.05L1.5,11.42a1.81,1.81,0,0,0-1,1.29L0,15.15s.46,1.16,7.8,1.16,7.79-1.16,7.79-1.16Z" />
+                </svg>
+              </div>
+            </td>
+            <td class="table__column">
+              <div class="table__diagramm">
+                <div class="table__charts table__charts--promoters">
+                  <div class="table__chart-top"></div>
+                  <div class="table__chart-bottom"></div>
+                </div>
+                <div class="table__percents-tendency">+1.2%</div>
+              </div>
+            </td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__column table__column--title">Скептики</td>
+            <td class="table__column">
+              <div class="table__column-top">
+                <p class="table__percent">39.1%</p>
+              </div>
+              <div class="table__column-bottom">
+                <p class="table__ppl-number">8</p>
+                <svg class="table__icon" viewBox="0 0 15.59 16.31" width="15px" height="15px">
+                  <path class="cls-1"
+                    d="M15.11,12.71a1.82,1.82,0,0,0-1-1.29l-2.81-1.29h0l-1.16-.88h0a.8.8,0,0,0-.19-.38l0,0V7.44a7.55,7.55,0,0,0,.72-1.32,1.7,1.7,0,0,0,.77-1.32c0-.69-.21-.85-.42-.86C11,3.47,11.24,0,7.71,0,3.92,0,4.46,4,4.46,4h0c-.2,0-.42.17-.38.8a1.76,1.76,0,0,0,.76,1.32,9.32,9.32,0,0,0,.72,1.32V8.89a.78.78,0,0,0-.19.36l-1.16.87v.05L1.5,11.42a1.81,1.81,0,0,0-1,1.29L0,15.15s.46,1.16,7.8,1.16,7.79-1.16,7.79-1.16Z" />
+                </svg>
+              </div>
+            </td>
+            <td class="table__column">
+              <div class="table__diagramm">
+                <div class="table__charts table__charts--sceptics">
+                  <div class="table__chart-top"></div>
+                  <div class="table__chart-bottom"></div>
+                </div>
+                <div class="table__percents-tendency">+4.8%</div>
+              </div>
+            </td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__column table__column--title">Критики</td>
+            <td class="table__column">
+              <div class="table__column-top">
+                <p class="table__percent">79.8%</p>
+              </div>
+              <div class="table__column-bottom">
+                <p class="table__ppl-number">7</p>
+                <svg class="table__icon" viewBox="0 0 15.59 16.31" width="15px" height="15px">
+                  <path class="cls-1"
+                    d="M15.11,12.71a1.82,1.82,0,0,0-1-1.29l-2.81-1.29h0l-1.16-.88h0a.8.8,0,0,0-.19-.38l0,0V7.44a7.55,7.55,0,0,0,.72-1.32,1.7,1.7,0,0,0,.77-1.32c0-.69-.21-.85-.42-.86C11,3.47,11.24,0,7.71,0,3.92,0,4.46,4,4.46,4h0c-.2,0-.42.17-.38.8a1.76,1.76,0,0,0,.76,1.32,9.32,9.32,0,0,0,.72,1.32V8.89a.78.78,0,0,0-.19.36l-1.16.87v.05L1.5,11.42a1.81,1.81,0,0,0-1,1.29L0,15.15s.46,1.16,7.8,1.16,7.79-1.16,7.79-1.16Z" />
+                </svg>
+              </div>
+            </td>
+            <td class="table__column">
+              <div class="table__diagramm">
+                <div class="table__charts table__charts--critics">
+                  <div class="table__chart-top"></div>
+                  <div class="table__chart-bottom"></div>
+                </div>
+                <div class="table__percents-tendency">-9.7%</div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+
+</html>

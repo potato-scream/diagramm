@@ -1,0 +1,267 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Gotham Pro', sans-serif;
+  src: url(fonts/GothamPro.woff);
+}
+
+html {
+  height: 100%;
+}
+
+.body {
+  position: relative;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+
+  color: #0b2149;
+  font-family: 'Arial', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.image {
+  width: 300px;
+  height: 700px;
+  background-image: url("img/test-background.png");
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.main {
+  padding: 16px;
+}
+
+.loyalty {
+  width: 300px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.loyalty__diagram-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 42px;
+  padding-left: 26px;
+}
+
+.loyalty__diagram-wrapper::before {
+  position: absolute;
+  content: "";
+  width: 38px;
+  height: 47px;
+  top: 14px;
+  background-image: url(img/flag.svg);
+}
+
+.loyalty::before {
+  position: absolute;
+  content: "";
+  width: 34px;
+  height: 245px;
+  top: 146px;
+  left: 16px;
+  background-image: url("img/chart-border.svg");
+}
+
+.circle-chart__figure {
+  transform-origin: center;
+  transform: rotate(-70deg);
+}
+
+.circle-chart__figure--animated {
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 534;
+  }
+}
+
+.loyalty__stats {
+  position: absolute;
+  width: 180px;
+  top: 78px;
+  left: 74px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.loyalty__percent {
+  margin: 0;
+}
+
+.loyalty__percent-number {
+  position: relative;
+  padding: 0 8px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-size: 46px;
+  line-height: normal;
+  color: #555556;
+}
+
+.loyalty__percent-subnumber {
+  font-size: 26px;
+}
+
+.loyalty__percent-sign {
+  position: absolute;
+  position: absolute;
+  top: 4px;
+  font-size: 16px;
+  right: 27px;
+  color: #a2a2a6;
+}
+
+.loyalty__description {
+  margin: 0;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.loyalty__summury {
+  margin: 0;
+  margin-top: 4px;
+  font-weight: bold;
+  color: #fcd329;
+}
+
+.loyalty__average {
+  margin: 0;
+  font-size: 11px;
+  padding: 0 18px;
+  color: #a2a2a6;
+}
+
+.loyalty__average-box {
+  display: flex;
+  margin: 0;
+  margin-top: 10px;
+  min-width: 49px;
+}
+
+.loyalty__triangle {
+  margin-right: 5px;
+  padding-top: 2px;
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 9px solid #70a94b;
+}
+
+.table__column {
+  vertical-align: top;
+  height: 46px;
+}
+
+.table__icon {
+  width: 18px;
+  height: 12px;
+  fill: #9d9d9c;
+}
+
+.table__percent {
+  margin: 0;
+  color: #555555;
+}
+
+.table__diagramm {
+  position: relative;
+  border: 1px solid #e8e6e6;
+  background-color: #ececec;
+  width: 90px;
+  height: 32px;
+  border-radius: 4px;
+  margin-left: 4px;
+  overflow: hidden;
+}
+
+.loyalty__table {
+  margin-top: 51px;
+  margin-left: 47px;
+}
+
+.table__column--title {
+  font-size: 14px;
+  font-weight: 400;
+  color: #555555;
+}
+
+.table__column-top {
+  font-size: 13px;
+  padding-left: 4px;
+}
+
+.table__column-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 5px;
+  padding-left: 11px;
+  font-size: 12px;
+}
+
+.table__ppl-number {
+  margin: 0;
+  color: #9d9d9c;
+}
+
+.table__charts {}
+
+.table__chart-top  {
+  height: 24px;
+}
+
+.table__chart-bottom {
+  height: 7px;
+}
+
+.table__charts--promoters .table__chart-top {
+  background-color: #70a84b;
+  width: 34%;
+}
+
+.table__charts--promoters .table__chart-bottom {
+  background-color: #b4d0a1;
+  width: 32%;
+}
+
+.table__charts--sceptics .table__chart-top {
+ background-color: #fbd22a;
+ width: 35%;
+}
+
+.table__charts--sceptics .table__chart-bottom {
+  background-color: #fbe791;
+  width: 30%;
+ }
+
+.table__charts--critics .table__chart-top {
+  background-color: #ed5243;
+  width: 28%;
+}
+
+.table__charts--critics .table__chart-bottom {
+  background-color: #f4a69e;
+  width: 33%;
+}
+
+.table__percents-tendency {
+  position: absolute;
+  z-index: 1;
+  top: 9px;
+  right: 5px;
+  font-size: 12px;
+  color: #9d9d9c;
+}
